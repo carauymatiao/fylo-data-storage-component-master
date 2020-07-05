@@ -10,6 +10,8 @@
 </head>
 <body>
 
+<div class="wrapper">
+
 <div class="center-wrapper">
 
 <div class="left-container">
@@ -22,10 +24,19 @@
 </div>
 
   <div class="right-container">
-    <h3>You’ve used 815 GB of your storage</h3>
-    <h2>185 <span class="remaining-space-text">GB Left</span></h2>
-    <h4>0 GB</h4>
-    <h4>1000 GB</h4>
+    <div class="storage-bubble">
+      <h2>185</h2> <p>GB Left</p>
+    </div>
+    <div class="storage-total">
+      <p>You’ve used <span>815 GB</span> of your storage</p>
+    </div>
+    <div class="progress-bar-blank">
+        <div class="progress-bar"></div>
+    </div>
+    <div class="storage-min-max">
+      <p class="min-txt">0 GB</p>
+      <p class="max-txt">1000 GB</p>
+    </div>
   </div>
 
 </div>
@@ -36,6 +47,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://carauymatiao.github.io/cv/">Cara Uymatiao</a>.
   </div>
+</div>
+
 </div>
 
 </body>
