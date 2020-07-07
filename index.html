@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
@@ -10,46 +11,49 @@
 </head>
 <body>
 
-<div class="wrapper">
+  <div class="main">
 
-<div class="center-wrapper">
+    <div class="left-container">
 
-<div class="left-container">
-  <img src="images/logo.svg" alt="logo">
-  <div class="icons-row">
-    <a href="#" class="icon-bg"><img src="images/icon-document.svg" alt="icon-document"></a>
-    <a href="#" class="icon-bg"><img src="images/icon-folder.svg" alt="icon-folder"></a>
-    <a href="#" class="icon-bg"><img src="images/icon-upload.svg" alt="icon-upload"></a>
+      <div class="logo-row">
+        <a href="#"><img src="images/logo.svg" alt="logo"></a>
+      </div>
+      <div class="icon-row">
+        <div class="icon-bg"><a href="#"><img src="images/icon-document.svg" alt="icon-document"></a></div>
+        <div class="icon-bg"><a href="#"><img src="images/icon-folder.svg" alt="icon-folder"></a></div>
+        <div class="icon-bg"><a href="#"><img src="images/icon-upload.svg" alt="icon-upload"></a></div>
+      </div>
+
+    </div>
+
+    <div class="right-container">
+
+      <div class="usage-txt"><p>You’ve used <span><strong>815 GB</strong></span> of your storage</p></div>
+      <div class="progress-bar">
+        <div class="progress-bar-active">
+          <div class="progress-bar-slider"></div>
+        </div>
+      </div>
+      <div class="units-txt"><p>0 GB</p><p>1000 GB</p></div>
+
+      <div class="bubble">
+        <div class="number-remaining-txt">
+          <h2>185</h2>
+        </div>
+        <div class="unit-remaining-txt">
+          <h3>GB Left</h3>
+        </div>
+      </div>
+
+    </div>
+
   </div>
-</div>
 
-  <div class="right-container">
-    <div class="storage-bubble">
-      <h2>185</h2> <p>GB Left</p>
-    </div>
-    <div class="storage-total">
-      <p>You’ve used <span>815 GB</span> of your storage</p>
-    </div>
-    <div class="progress-bar-blank">
-        <div class="progress-bar"></div>
-    </div>
-    <div class="storage-min-max">
-      <p class="min-txt">0 GB</p>
-      <p class="max-txt">1000 GB</p>
-    </div>
-  </div>
-
-</div>
-
-<div class="footer">
-  <img class="bg-desktop-img" src="images/bg-desktop.png" alt="bg-desktop">
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="https://carauymatiao.github.io/cv/">Cara Uymatiao</a>.
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Cara Uymatiao</a>.</p>
   </div>
-</div>
-
-</div>
+  <div class="footer"></div>
 
 </body>
 </html>
