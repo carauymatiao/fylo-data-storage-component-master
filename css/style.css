@@ -15,11 +15,50 @@ body {
 
   background-image: url(../images/bg-mobile.png);
   background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- CONTAINERS ----------*/
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Axis */
+  align-items: center; /* Cross-Axis */
+
+  flex: 1 0 90%;
+}
+
+.left-container {
+  background-color: #1d2c67;
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 15px 100px 15px 15px;
+
+  width: 70%;
+  padding: 30px;
+  margin: 30px;
+  text-align: left;
+}
+
+.right-container {
+  background-color: #1d2c67;
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 15px;
+
+  width: 70%;
+  padding: 30px;
+  margin: 30px;
+  text-align: center;
 }
 
 .attribution {
   font-size: 0.8em;
-  margin-bottom: 2em;
+
+  flex: 1 0 5%;
+  margin-top: 5%;
 }
 
 .attribution a {
@@ -32,35 +71,6 @@ body {
 .attribution a:hover {
   color: #dddbff; /* Fallback color */
   color: hsl(243, 100%, 93%);
-}
-
-/* ---------- CONTAINERS ----------*/
-
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;; /* Axis */
-  align-items: center; /* Cross-Axis */
-  height: 95%;
-}
-
-.left-container {
-  background-color: #1d2c67;
-  background-color: hsl(228, 56%, 26%);
-  border-radius: 15px 100px 15px 15px;
-  width: 70%;
-  padding: 30px;
-  margin: 30px;
-  text-align: left;
-}
-
-.right-container {
-  background-color: #1d2c67;
-  background-color: hsl(228, 56%, 26%);
-  border-radius: 15px;
-  width: 70%;
-  padding: 30px;
-  margin: 30px;
 }
 
 /* ----- LEFT -----*/
@@ -166,7 +176,18 @@ body {
 @media screen and (min-width: 768px) {
 
   body {
-    background-image: none;
+    background-image: url(../images/bg-desktop.png);
+    background-position: left bottom;
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .attribution {
+    margin-top: 0;
   }
 
   .main {
@@ -174,12 +195,6 @@ body {
     flex-direction: row;
 
     width: 55%;
-    height: 95%;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
   }
 
   .left-container {
@@ -224,15 +239,4 @@ body {
   	margin-left: -26px;
   	margin-bottom: -18px;
   }
-
-  .footer {
-    position: fixed;
-    bottom: 0;
-    background-image: url(../images/bg-desktop.png);
-    background-size: cover;
-    z-index: -1;
-    width: 100%;
-    height: 50%;
-  }
-
 }
